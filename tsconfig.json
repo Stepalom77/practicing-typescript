@@ -101,7 +101,11 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "exclude": [ // specifies which files you don't want to compile to javascript with tsc
-    "src/functions.ts", "src/core_types.tssrc/never_unknowsrc/union_literal_custom_types.tstom_types.ts", "src/basics/basics.ts"
+    "src/basics/functions.ts", 
+    "src/basics/core_types.ts" , 
+    "src/basics/never_unknown.ts", 
+    "src/basics/union_literal_custom_types.ts", 
+    "src/basics/basics.ts"
   ]
   /* "includes": [] specifies which are the only files that will be compiled /*
   /* files: [] specifies which files and folders that will be compiled */
