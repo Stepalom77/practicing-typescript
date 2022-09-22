@@ -1,8 +1,12 @@
-///<reference path="base_component.ts" />
-///<reference path="../decorators/auto_bind.ts" />
-///<reference path="../state/project_state.ts" />
+import { Component } from "./base_component";
+import { autoBind } from "../decorators/auto_bind";
+import { ProjectStatus } from "../models/project";
+import { projectState } from "../state/project_state";
+import { Project } from "../models/project";
+import { DragTarget } from "../models/drag_drop_interfaces";
+import { ProjectItem } from "./project_item";
 
-namespace App {
+
     export class ProjectList extends Component<HTMLDivElement, HTMLElement> implements DragTarget {
         assignedProjects:Project[];
         constructor(private type:'active' | 'finished'){
@@ -66,4 +70,3 @@ namespace App {
             this.element.querySelector('h2')!.textContent = this.type.toUpperCase() + 'PROJECTS'
         }
     }
-}

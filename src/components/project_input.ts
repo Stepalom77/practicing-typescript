@@ -1,9 +1,9 @@
-///<reference path="base_component.ts" />
-///<reference path="../decorators/auto_bind.ts" />
-///<reference path="../state/project_state.ts" />
-///<reference path="../models/project.ts" />
-///<reference path="../models/drag_drop_interfaces.ts" />
-namespace App {
+
+import { validate, Validatable } from "../util/validation";
+import { autoBind } from "../decorators/auto_bind";
+import { Component } from "./base_component";
+import { projectState } from "../state/project_state";
+
     export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
         titleInputElement:HTMLInputElement;
         descriptionInputElement:HTMLInputElement;
@@ -67,4 +67,3 @@ namespace App {
             }
         }
     }
-}
