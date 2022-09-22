@@ -107,7 +107,8 @@
     "src/basics/union_literal_custom_types.ts", 
     "src/basics/basics.ts",
     "src/Classes/*",
-    "src/advanced/*"
+    "src/advanced/*",
+    "node_modules"
   ]
   /* "includes": [] specifies which are the only files that will be compiled /*
   /* files: [] specifies which files and folders that will be compiled */
